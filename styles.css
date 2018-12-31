@@ -1,0 +1,55 @@
+/* Styles for the Technical Documentation Page */ 
+/*resets the css so the main div goes to the edge of the viewport */
+html, body{
+	margin: 0; 
+	padding: 0;
+	height: 100%; /* this makes the page full screen*/
+	font-family: Raleway, Helvetica, sans-serif;
+}
+
+#navbar {
+	position: fixed;
+	min-width: 290px;
+	width: 300px;
+	height: 100%;
+	border-right: 1px solid rgba(0,22,22,0.4);
+	padding: 20px 10px 10px 20px;
+}
+
+#main-doc {
+	position: absolute;
+	margin-left: 310px;
+	padding: 40px;
+	margin-bottom: 110px;
+}
+
+#main-doc header {
+	text-align: left;
+	margin: 0px;
+}
+
+header {
+	font-size: 1.4em;
+}
+ul {
+	margin : 0;
+}
+
+li {
+	list-style: none;
+}
+
+a:link {
+	text-decoration: none;
+	font-size: 1.1 em;
+	font-weight: bold; 
+}
+a:visited {
+
+}
+a:hover {
+
+}
+a:active {
+
+}
