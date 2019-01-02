@@ -2,6 +2,7 @@
 /*resets the css so the main div goes to the edge of the viewport */
 html, body{
 	margin: 0; 
+	color: black;
 	padding: 0;
 	height: 100%; /* this makes the page full screen*/
 	font-family: Raleway, Helvetica, sans-serif;
@@ -10,10 +11,21 @@ html, body{
 #navbar {
 	position: fixed;
 	min-width: 290px;
-	width: 300px;
+	width: 320px;
 	height: 100%;
 	border-right: 1px solid rgba(0,22,22,0.4);
-	padding: 20px 10px 10px 20px;
+	background-color: rgb(192,192,192);
+}
+
+#navbar ul { /* makes a scroll bar in the navigation*/
+	height: 86%;
+	overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#header-title {
+	margin-left: 20px;
+	color: white;
 }
 
 #main-doc {
@@ -31,12 +43,28 @@ html, body{
 header {
 	font-size: 1.4em;
 }
+
 ul {
 	margin : 0;
+	text-align: center;
+	padding-inline-start: 0px;
+	margin-top: 20px;
 }
 
 li {
+	width: 100%;
 	list-style: none;
+	text-align: center;
+	padding: 15px 0px;
+	border-top: 1px solid black;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	font-weight: 400;
+	background-color: rgb(220,220,220);
+}
+
+li:hover{
+	background-color: lightblue;
 }
 
 a:link {
