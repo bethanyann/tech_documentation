@@ -7,75 +7,104 @@
 </head>
 <body>
 	<nav id="navbar">
-		<header><h4 id="header-title">Technical Documentation</h4></header>
+		<header><h4 id="header-title">three.js documentation</h4></header>
 		<ul>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#getting_started" class="nav-link">Getting Started</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#creating_a_scene" class="nav-link">Creating a Scene</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#next_steps" class="nav-link">Next Steps</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#build_tools" class="nav-link">Build Tools</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#reference" class="nav-link">Reference</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#animation" class="nav-link">Animation</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#audio" class="nav-link">Audio</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#cameras" class="nav-link">Cameras</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#constants" class="nav-link">Constants</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#core" class="nav-link">Core</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
+				<a href="#extras" class="nav-link">Extras</a>
 			</li>
 			<li>
 				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
-			</li>
-			<li>
-				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
-			</li>
-			<li>
-				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
-			</li>
-			<li>
-				<!--These links will take you to the corresponding header section -->
-				<a href="" id="nav-link corresponding_section_id_name">link to section on page goes here</a>
-			</li>
-			
-			
+				<a href="#geometries" class="nav-link">Geometries</a>
+			</li>			
 		</ul>
 	</nav>
 	<main id="main-doc"> <!--contains the page's main content -->
-		<section class="main-section title_of_information_here"><!-- SECTION 1 -->
-			<header id=" ">Title of information section</header>
+		<section class="main-section" id="getting_started">
+			<header id=" ">Getting Started</header>
+				<p> 
+					The goal of this section is to give a brief introduction to three.js. We will start by setting up a scene, with a spinning cube. A working example is provided at the bottom of the page in case you get stuck and need help.
+
+	
+					Before you can use three.js, you need somewhere to display it. Save the following HTML to a file on your computer, along with a copy of three.js in the js/ directory, and open it in your browser.
+				</p>
+				
+		</section>
+		<section class="main-section" id="creating_a_scene">
+			<header id=" ">Creating a Scene</header>
+				<p> 
+					To actually be able to display anything with three.js, we need three things: scene, camera and renderer, so that we can render the scene with camera.
+				</p>
+				<p style="padding-left: 30px;">
+					<code>var scene = new THREE.Scene(); </code><br>
+					<code>var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );</code><br>
+					
+					<code>var renderer = new THREE.WebGLRenderer();</code><br>
+					<code>renderer.setSize( window.innerWidth, window.innerHeight );</code><br>
+					<code>document.body.appendChild( renderer.domElement );</code>
+				</p>
+				<p> 
+					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
+				</p>
+		</section>
+		<section class="main-section" id="next_steps">
+			<header id=" ">Next Steps</header>
+				<p> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
+					<ol>
+						<li>Fist Item</li>
+						<li>Second Item</li>
+						<li>Third Item</li>
+						<li>Fourth Item</li>
+						<li>Fifth Item </li>
+					</ol>
+				</p>
+				<p> 
+					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
+				</p>
+		</section>
+		<section class="main-section" id="build_tools">
+			<header id=" ">Build Tools</header>
 				<p> 
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
 				</p>
@@ -83,8 +112,8 @@
 					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
 				</p>
 		</section>
-		<section class="main-section title_of_information_here"><!-- SECTION 2 -->
-			<header id=" ">Title of information section</header>
+		<section class="main-section" id="reference">
+			<header id=" ">Reference</header>
 				<p> 
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
 				</p>
@@ -92,8 +121,8 @@
 					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
 				</p>
 		</section>
-		<section class="main-section title_of_information_here"><!-- SECTION 3 -->
-			<header id=" ">Title of information section</header>
+		<section class="main-section" id="animation">
+			<header id=" ">Animation</header>
 				<p> 
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
 				</p>
@@ -101,8 +130,8 @@
 					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
 				</p>
 		</section>
-		<section class="main-section title_of_information_here"><!-- SECTION 4 -->
-			<header id=" ">Title of information section</header>
+		<section class="main-section" id="audio">
+			<header id=" ">Audio</header>
 				<p> 
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
 				</p>
@@ -110,8 +139,8 @@
 					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
 				</p>
 		</section>
-		<section class="main-section title_of_information_here"><!-- SECTION 5 -->
-			<header id=" ">Title of information section</header>
+		<section class="main-section" id="cameras">
+			<header id=" ">Cameras</header>
 				<p> 
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
 				</p>
@@ -119,8 +148,35 @@
 					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
 				</p>
 		</section>
-		<section class="main-section title_of_information_here"><!-- SECTION 5 -->
-			<header id=" ">Title of information section</header>
+		<section class="main-section" id="constants">
+			<header id=" ">Constants</header>
+				<p> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
+				</p>
+				<p> 
+					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
+				</p>
+		</section>
+		<section class="main-section" id="core">
+			<header id=" ">Core</header>
+				<p> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
+				</p>
+				<p> 
+					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
+				</p>
+		</section>
+		<section class="main-section" id="extras">
+			<header id=" ">Extras</header>
+				<p> 
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
+				</p>
+				<p> 
+					Proin ut sollicitudin lacus. Donec ultricies, dolor a condimentum sodales, ex leo convallis lectus, porttitor rutrum magna est sed odio. Quisque ultrices ultrices placerat. Nulla sed mauris nisl. Aenean mauris sem, pharetra et ipsum consequat, tincidunt sodales dolor. Integer interdum turpis in lectus molestie, vel porta massa auctor. Sed non leo quis lectus sagittis egestas. Nam est tellus, pharetra sit amet velit nec, malesuada dapibus nibh. 
+				</p>
+		</section>
+		<section class="main-section" id="geometries">
+			<header id=" ">Geometries</header>
 				<p> 
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eu volutpat odio, eget egestas sem. Nulla rhoncus pharetra turpis. Curabitur venenatis tincidunt orci. Phasellus euismod vehicula massa, ut gravida massa pretium in. Etiam gravida nisl dui, sit amet dictum lacus sollicitudin in. Sed tempus, odio a aliquet tempor, velit enim mattis risus
 				</p>
